@@ -233,7 +233,6 @@ export default function Sidebar({ isOpen, onClose }) {
 function FavoritesList({ onNavigate }) {
   const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
   const GOLD = "#C9A84C";
-  const GREEN = "#1B4D2E";
 
   if (favorites.length === 0) return (
     <div style={{ textAlign: "center", padding: "40px 0" }}>
