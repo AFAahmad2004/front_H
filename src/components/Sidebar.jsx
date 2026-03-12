@@ -12,7 +12,7 @@ const categories = [
 ];
 
 // ألوان Brand
-const GREEN  = "#1B4D2E";
+// const GREEN  = "#1B4D2E";
 const GOLD   = "#C9A84C";
 const GOLD2  = "#e8c96a";
 const DARK   = "#163d24";

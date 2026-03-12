@@ -2,26 +2,12 @@ import React, { useState } from "react";
 
 const GREEN = "#1B4D2E";
 const GOLD  = "#C9A84C";
-const GOLD2 = "#e8c96a";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [status, setStatus] = useState("");
-  const [loading, setLoading] = useState(false);
+ 
 
-  const handleSubmit = async () => {
-    if (!form.name || !form.email || !form.message) { setStatus("error"); return; }
-    setLoading(true);
-    try {
-      const res = await fetch("https://back-h-sr2i.onrender.com//contact", {
-        method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-      if (res.ok) { setStatus("success"); setForm({ name: "", email: "", message: "" }); }
-      else setStatus("error");
-    } catch { setStatus("servererror"); }
-    finally { setLoading(false); }
-  };
+  
 
   return (
     <div style={{ direction: "rtl", fontFamily: "'Segoe UI', Tahoma, sans-serif", background: "#f5f7f5", minHeight: "100vh" }}>
