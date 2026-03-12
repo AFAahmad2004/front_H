@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-
+import React from "react";
 const GREEN = "#1B4D2E";
 const GOLD  = "#C9A84C";
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
  
 
   
